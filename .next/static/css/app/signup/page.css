@@ -1,0 +1,307 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./app/signup/signup.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************/
+.signup_container__VHxSu {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.signup_header__kxUmW {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: absolute;
+  top: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.signup_navLinks__AmUx5 {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.signup_navLink__mBGTZ {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.signup_navLink__mBGTZ:hover {
+  color: white;
+}
+
+.signup_navLink__mBGTZ.signup_active__MsPZR {
+  color: white;
+  position: relative;
+}
+
+.signup_navLink__mBGTZ.signup_active__MsPZR::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #7AFC90;
+}
+
+.signup_formContainer__WgTkq {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  background-color: #303030;
+  border-radius: 30px;
+  margin-top: 5rem;
+}
+
+.signup_title__f_fv7 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.signup_inputGroup__sA_ms {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.signup_input__nIvFN {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1e1e1e;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.signup_input__nIvFN::placeholder {
+  color: #7c7c7c;
+}
+
+.signup_checkboxGroup__8JGhi {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.signup_checkboxLabel__Vs1EA {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.signup_checkbox__gIyfQ {
+  margin-top: 3px;
+  margin-right: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #7c7c7c;
+  border-radius: 3px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.signup_checkbox__gIyfQ:checked {
+  background-color: #7AFC90;
+  border-color: #7AFC90;
+}
+
+.signup_checkbox__gIyfQ:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.signup_checkboxText__zX04X {
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+.signup_link__AMOYU {
+  color: #7AFC90;
+  text-decoration: none;
+}
+
+.signup_link__AMOYU:hover {
+  text-decoration: underline;
+}
+
+.signup_signupButton__nbm3T {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background-color: #4A4A4A;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.signup_facebookButton__r9BI6 {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0.75rem;
+  background-color: #4A4A4A;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.signup_facebookIcon__zEOS_ {
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background-color: white;
+  color: #4A4A4A;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.signup_loginLink__EPNvE {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+/* Override global checkbox styling just for this form */
+.signup_checkboxGroup__8JGhi input[type="checkbox"] {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #7c7c7c;
+  border-radius: 3px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.signup_checkboxGroup__8JGhi input[type="checkbox"]:checked {
+  background-color: #7AFC90;
+  border-color: #7AFC90;
+}
+
+.signup_checkboxGroup__8JGhi input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.signup_error__cVvvb {
+  color: #ff4a4a;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: 340px;
+  margin: 0 auto 1rem auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .signup_header__kxUmW {
+    padding: 1rem;
+    justify-content: center;
+  }
+  
+  .signup_formContainer__WgTkq {
+    padding: 1.5rem;
+    margin-top: 6rem;
+  }
+  
+  .signup_checkboxText__zX04X {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup_header__kxUmW {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+  }
+  
+  .signup_navLinks__AmUx5 {
+    margin-top: 0.5rem;
+  }
+  
+  .signup_formContainer__WgTkq {
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin-top: 7rem;
+  }
+  
+  .signup_title__f_fv7 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signup_input__nIvFN {
+    padding: 0.6rem;
+  }
+  
+  .signup_signupButton__nbm3T, .signup_facebookButton__r9BI6 {
+    padding: 0.6rem;
+  }
+  
+  .signup_checkboxText__zX04X {
+    font-size: 0.7rem;
+  }
+} 

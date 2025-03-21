@@ -1,0 +1,542 @@
+.dashboardContainer {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #121212;
+  color: white;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  background-color: #1e1e1e;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 1000;
+  border-right: 1px solid #333;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.sidebarIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.cartIcon, .notificationIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0 15px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #a0a0a0;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  border-radius: 8px;
+}
+
+.navItem:hover {
+  background-color: #252525;
+}
+
+.navItem.active {
+  color: white;
+  background-color: #252525;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  position: absolute;
+  right: 15px;
+  background-color: #7AFC90;
+  color: black;
+  font-size: 0.8rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.helpItem {
+  margin-top: auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.helpIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+/* Main Content Styles */
+.mainContent {
+  flex: 1;
+  padding: 30px;
+  width: calc(100% - 180px);
+  background-color: #121212;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Ensure content isn't hidden */
+.mainContent > * {
+  position: relative;
+}
+
+/* GET STARTED Section Styles */
+.getStarted {
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+}
+
+.getStarted h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* Cards Section */
+.cardsSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 200;
+  width: 100%;
+  min-height: 150px;
+}
+
+.card {
+  background-color: #242424;
+  border-radius: 15px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  position: relative;
+  z-index: 200;
+  min-height: 200px;
+}
+
+.card:hover {
+  border-color: #7AFC90;
+}
+
+.card:hover .cardButton {
+  background-color: #7AFC90;
+  color: black;
+}
+
+.uploadCard {
+  border: 2px solid #7AFC90;
+  border-radius: 15px;
+}
+
+.masteringCard {
+  border: none;
+}
+
+.cardIcon {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #7AFC90;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.cardButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.uploadCard .cardButton {
+  background-color: #7AFC90;
+  color: black;
+}
+
+/* Activity Section */
+.activitySection {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.activitySection h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.activityCard {
+  background-color: #242424;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.activityHeader h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.manageButton, .learnButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.planDetails h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.planDetails p {
+  color: #a0a0a0;
+  font-size: 0.8rem;
+}
+
+.referText {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.creditsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.creditRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.creditAmount {
+  font-weight: 500;
+}
+
+/* Distribution Section */
+.distributionSection {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.distReleaseSection, .streamsSection {
+  background-color: #242424;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.distReleaseSection h3, .streamsSection h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.releaseItem {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.releaseIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.releaseInfo h4 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.releaseInfo p {
+  color: #a0a0a0;
+  font-size: 0.8rem;
+}
+
+.releaseDetails h4 {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.releaseDetails p {
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.resumeButton {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.streamGraph {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.graph {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.graphLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #7AFC90 20%, #7AFC90 80%, transparent 100%);
+  transform: translateY(-50%);
+}
+
+.graphLine::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60px;
+  background: radial-gradient(ellipse at center, #7AFC9050 0%, transparent 70%);
+}
+
+/* News Section */
+.newsSection {
+  margin-bottom: 40px;
+}
+
+.newsSection h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.newsCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.newsCard {
+  background-color: #242424;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.newsImageContainer {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.newsImage {
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  background-image: linear-gradient(45deg, #444, #222);
+}
+
+.newsCard h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 15px 15px 10px;
+}
+
+.newsCard p {
+  color: #a0a0a0;
+  font-size: 0.8rem;
+  padding: 0 15px 15px;
+  line-height: 1.4;
+}
+
+.submitButton {
+  width: 90%;
+  margin: 0 auto 15px;
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.loadingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #121212;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .cardsSection, .activityGrid, .newsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .distributionSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+  
+  .mainContent {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+    padding: 20px;
+  }
+  
+  .cardsSection, .activityGrid, .newsCards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card, .activityCard, .distReleaseSection, .streamsSection, .newsCard {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 50px;
+  }
+  
+  .navIcon {
+    margin-right: 0;
+  }
+  
+  .navItem span {
+    display: none;
+  }
+  
+  .mainContent {
+    margin-left: 50px;
+    width: calc(100% - 50px);
+    padding: 15px;
+  }
+}
